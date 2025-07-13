@@ -39,8 +39,8 @@ public class App {
     CommandLineRunner commandLineRunner() {
         return args -> {
 
-            var userGoal = "chip travel from NC to London consist hotel and visit famous place";
-           // var userGoal = "chip travel from NC to London without reserve hotel and visit famous place";
+            var userGoal = "cheap travel from NC to London consist hotel and visit famous place";
+           // var userGoal = "cheap travel from NC to London without reserve hotel and visit famous place";
 
          //var result=   planAndExecuteService.planAndExecute(userGoal);
 
