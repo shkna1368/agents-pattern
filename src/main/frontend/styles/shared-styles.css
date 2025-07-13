@@ -1,0 +1,79 @@
+:host {
+    --lumo-base-color: #f8f9fa;
+    --lumo-primary-color: #007bff;
+    --lumo-primary-text-color: #fff;
+}
+
+/* General layout tweaks */
+vaadin-vertical-layout,
+vaadin-horizontal-layout {
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Form fields */
+vaadin-text-field {
+    max-width: 300px;
+}
+
+/* Buttons */
+vaadin-button {
+    background-color: var(--lumo-primary-color);
+    color: var(--lumo-primary-text-color);
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Dialog styles */
+vaadin-dialog-overlay {
+    border-radius: 12px;
+}
+
+/* Grid styling */
+vaadin-grid {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.modern-button {
+    /* Font and Text */
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+    /* Sizing and Spacing */
+    padding: 12px 24px;
+    margin: 8px; /* Adds space between buttons */
+
+    /* Background and Border */
+    background: linear-gradient(to bottom, #007bff, #0069d9);
+    border: none;
+    border-radius: 8px; /* Slightly more rounded corners */
+
+    /* Effects and Interaction */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Style for when the mouse hovers over the button */
+.modern-button:hover {
+    background: linear-gradient(to bottom, #0069d9, #005cbf);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px); /* Lifts the button on hover */
+}
+
+/* Style for when the button is being clicked */
+.modern-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for accessibility, showing focus */
+.modern-button:focus {
+    outline: 2px solid #005cbf;
+    outline-offset: 2px;
+}

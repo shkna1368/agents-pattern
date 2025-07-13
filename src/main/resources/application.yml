@@ -1,0 +1,36 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ollama
+
+  ai:
+
+    openai:
+      base-url: https://generativelanguage.googleapis.com
+      api-key: AIzaSyBZOpekL9SiANIu52FlAmsZLlGKXIv5b7Q
+      model: gemini-2.0-flash
+      temperature: gemini-2.0-flash
+      max-tokens: 1000
+      chat:
+        completions-path: /v1beta/openai/chat/completions
+        options:
+          model: gemini-2.0-flash
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ofk
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+vaadin:
+  push:
+    enabled: true

@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "D:/projects/sampleProject/agentpattern/./src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "D:/projects/sampleProject/agentpattern/./src/main/frontend/generated/jar-resources",
+  "staticOutput": "D:/projects/sampleProject/agentpattern/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "D:\\projects\\sampleProject\\agentpattern\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "D:\\projects\\sampleProject\\agentpattern\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "D:/projects/sampleProject/agentpattern/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "D:/projects/sampleProject/agentpattern/target/dev-bundle/config",
+  "jarResourcesFolder": "D:/projects/sampleProject/agentpattern/./src/main/frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "D:\\projects\\sampleProject\\agentpattern\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

@@ -1,0 +1,38 @@
+:host {
+    --lumo-base-color: #f8f9fa;
+    --lumo-primary-color: #007bff;
+    --lumo-primary-text-color: #fff;
+}
+
+/* General layout tweaks */
+vaadin-vertical-layout,
+vaadin-horizontal-layout {
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Form fields */
+vaadin-text-field {
+    max-width: 300px;
+}
+
+/* Buttons */
+vaadin-button {
+    background-color: var(--lumo-primary-color);
+    color: var(--lumo-primary-text-color);
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Dialog styles */
+vaadin-dialog-overlay {
+    border-radius: 12px;
+}
+
+/* Grid styling */
+vaadin-grid {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
