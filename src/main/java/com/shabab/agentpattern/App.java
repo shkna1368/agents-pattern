@@ -5,6 +5,7 @@ package com.shabab.agentpattern;
 
 
 
+import com.shabab.agentpattern.appgenerator.AppGeneratorAgent;
 import com.shabab.agentpattern.codeagent.CodeAgent;
 import com.shabab.agentpattern.multi_agent.MultiAgentSupervisor;
 import com.shabab.agentpattern.plan_and_exeute.PlanAndExecuteAgent;
@@ -29,6 +30,9 @@ public class App {
 
     @Autowired
     ReflectionAgent reflectionAgent;
+
+    @Autowired
+    AppGeneratorAgent appGeneratorAgent;
 
     @Autowired
     CodeAgent codeAgent;
@@ -58,10 +62,13 @@ public class App {
        //     multiAgentSupervisor.run();
 
         // var code=   codeAgent.start("give me find max number in list of number ");
-        var code1=   codeAgent.start("give me  function find 3 biggest number in list");
-         var code=   codeAgent.startRequest("based on salary deduction formula : (salary-0.2)+(salary-0.5) .my salary is 2500 ");
-            System.out.println(code);
-           System.out.println(code1);
+     //   var code1=   codeAgent.start("give me  function find 3 biggest number in list");
+      //   var code=   codeAgent.startRequest("based on salary deduction formula : (salary-0.2)+(salary-0.5) .my salary is 2500 ");
+         //   System.out.println(code);
+        //   System.out.println(code1);
+
+          //  appGeneratorAgent.start("make shortlink project with ui that convert long link to short link");
+            appGeneratorAgent.start("make banking app support : open account,fund transfer,transaction histories,check balance and close account");
         };
     }
 }
