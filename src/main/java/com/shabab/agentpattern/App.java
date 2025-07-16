@@ -5,6 +5,7 @@ package com.shabab.agentpattern;
 
 
 
+import com.shabab.agentpattern.codeagent.CodeAgent;
 import com.shabab.agentpattern.multi_agent.MultiAgentSupervisor;
 import com.shabab.agentpattern.plan_and_exeute.PlanAndExecuteAgent;
 import com.shabab.agentpattern.reflection.ReflectionAgent;
@@ -29,6 +30,9 @@ public class App {
     @Autowired
     ReflectionAgent reflectionAgent;
 
+    @Autowired
+    CodeAgent codeAgent;
+
     public static void main(String[] args) {
 
         SpringApplication.run(App.class, args);
@@ -51,8 +55,13 @@ public class App {
 
         //    System.out.println(result);
 
-            multiAgentSupervisor.run();
+       //     multiAgentSupervisor.run();
 
+        // var code=   codeAgent.start("give me find max number in list of number ");
+        var code1=   codeAgent.start("give me  function find 3 biggest number in list");
+         var code=   codeAgent.startRequest("based on salary deduction formula : (salary-0.2)+(salary-0.5) .my salary is 2500 ");
+            System.out.println(code);
+           System.out.println(code1);
         };
     }
 }

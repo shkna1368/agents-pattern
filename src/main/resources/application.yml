@@ -9,7 +9,7 @@ spring:
 
     openai:
       base-url: https://generativelanguage.googleapis.com
-      api-key: Your Api Key
+      api-key: AIzaSyBZOpekL9SiANIu52FlAmsZLlGKXIv5b7Q
       model: gemini-2.0-flash
       temperature: gemini-2.0-flash
       max-tokens: 1000
