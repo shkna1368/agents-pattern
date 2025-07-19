@@ -6,6 +6,7 @@ package com.shabab.agentpattern;
 
 
 import com.shabab.agentpattern.appgenerator.AppGeneratorAgent;
+import com.shabab.agentpattern.browseragent.BrowserAgent;
 import com.shabab.agentpattern.codeagent.CodeAgent;
 import com.shabab.agentpattern.multi_agent.MultiAgentSupervisor;
 import com.shabab.agentpattern.plan_and_exeute.PlanAndExecuteAgent;
@@ -36,6 +37,9 @@ public class App {
 
     @Autowired
     CodeAgent codeAgent;
+
+    @Autowired
+    BrowserAgent browserAgent;
 
     public static void main(String[] args) {
 
@@ -68,7 +72,9 @@ public class App {
         //   System.out.println(code1);
 
           //  appGeneratorAgent.start("make shortlink project with ui that convert long link to short link");
-            appGeneratorAgent.start("make banking app support : open account,fund transfer,transaction histories,check balance and close account");
+         //   appGeneratorAgent.start("make banking app support : open account,fund transfer,transaction histories,check balance and close account");
+
+       browserAgent.start("برو به سایت ثبت احوال ایران");
         };
     }
 }
