@@ -88,7 +88,6 @@ components.add(component);}
                     [Component(id=ctl13_ctl00_ctl07_ctl00__sbSearch_ctl00, placeholder=جستجو, nameAttr=ctl13:ctl00:ctl07:ctl00::sbsearch:ctl00, labelText=), Component(id=ctl13_ctl00_ctl07_ctl00__sbSearch_ctl01, placeholder=جستجو, nameAttr=, labelText=), Component(id=ctl13_ctl03_ctl00_Review4134_ctl00_txtName, placeholder= نام, nameAttr=ctl13$ctl03$ctl00$review4134$ctl00$txtname, labelText=), Component(id=ctl13_ctl03_ctl00_Review4134_ctl00_txtEmail, placeholder=ایمیل, nameAttr=ctl13$ctl03$ctl00$review4134$ctl00$txtemail, labelText=), Component(id=ctl13_ctl03_ctl00_Review4134_ctl00_txtComment, placeholder=نظر شما, nameAttr=ctl13$ctl03$ctl00$review4134$ctl00$txtcomment, labelText=)]
                     """;*/
 
-
            // page.waitForTimeout(5000);
 
 
