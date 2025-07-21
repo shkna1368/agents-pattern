@@ -55,6 +55,40 @@ public class VoiceToTextAgent {
 
     }
 
+public String startMeeting(String filePath) throws IOException, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+
+        ClassPathResource res= new ClassPathResource(filePath);
+        Media media=new Media(MimeTypeUtils.parseMimeType("audio/mp3"), res);
+ List<Media> mediaList=new ArrayList<>();
+
+ String prompt= """
+         Your input voice is Persian or English.
+         
+         
+        just give me important decisions were made without any explanation;
+      
+         give me result in English.
+         """;
+ mediaList.add(media);;
+        var userMessage=UserMessage.builder()
+                .text(prompt)
+                .media(mediaList)
+                .build();
+
+
+
+
+        //ChatResponse response = chatModel.call(new Prompt(List.of(this.userMessage)));
+
+
+        var client = builder.build();
+
+        var response = client.prompt(new Prompt(List.of(userMessage))).call().content();
+        System.out.println(response);
+        return response;
+
+    }
+
 
 
 }
