@@ -8,6 +8,7 @@ package com.shabab.agentpattern;
 import com.shabab.agentpattern.appgenerator.AppGeneratorAgent;
 import com.shabab.agentpattern.browseragent.BrowserAgent;
 import com.shabab.agentpattern.codeagent.CodeAgent;
+import com.shabab.agentpattern.cv.CvAgent;
 import com.shabab.agentpattern.multi_agent.MultiAgentSupervisor;
 import com.shabab.agentpattern.plan_and_exeute.PlanAndExecuteAgent;
 import com.shabab.agentpattern.reflection.ReflectionAgent;
@@ -40,6 +41,9 @@ public class App {
 
     @Autowired
     BrowserAgent browserAgent;
+
+    @Autowired
+    CvAgent cvAgent;
 
     public static void main(String[] args) {
 
@@ -74,7 +78,13 @@ public class App {
           //  appGeneratorAgent.start("make shortlink project with ui that convert long link to short link");
          //   appGeneratorAgent.start("make banking app support : open account,fund transfer,transaction histories,check balance and close account");
 
-       browserAgent.start("برو به سایت ثبت احوال ایران");
+     //  browserAgent.start("برو به سایت ثبت احوال ایران");
+
+
+            String jobDescription= """
+//                   Senior Java and spring boot Developer has at least 5 years experience.must have experience in microservice.must Bachelor's Degree in Computer Software Engineering or related field.
+                    """;
+            cvAgent.start("classpath:\\cv1.pdf",jobDescription);
         };
     }
 }
