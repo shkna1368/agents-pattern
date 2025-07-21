@@ -12,6 +12,7 @@ import com.shabab.agentpattern.cv.CvAgent;
 import com.shabab.agentpattern.multi_agent.MultiAgentSupervisor;
 import com.shabab.agentpattern.plan_and_exeute.PlanAndExecuteAgent;
 import com.shabab.agentpattern.reflection.ReflectionAgent;
+import com.shabab.agentpattern.voicetotext.VoiceToTextAgent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -44,6 +45,10 @@ public class App {
 
     @Autowired
     CvAgent cvAgent;
+
+
+    @Autowired
+    VoiceToTextAgent voiceToTextAgent;
 
     public static void main(String[] args) {
 
@@ -84,7 +89,9 @@ public class App {
             String jobDescription= """
 //                   Senior Java and spring boot Developer has at least 5 years experience.must have experience in microservice.must Bachelor's Degree in Computer Software Engineering or related field.
                     """;
-            cvAgent.start("classpath:\\cv1.pdf",jobDescription);
+          //  cvAgent.start("classpath:\\cv1.pdf",jobDescription);
+            voiceToTextAgent.start("apprequirement.mp3");
+            voiceToTextAgent.start("appfarsi.mp3");
         };
     }
 }
