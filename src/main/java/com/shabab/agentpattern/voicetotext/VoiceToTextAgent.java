@@ -62,12 +62,13 @@ public String startMeeting(String filePath) throws IOException, ClassNotFoundExc
  List<Media> mediaList=new ArrayList<>();
 
  String prompt= """
-         Your input voice is Persian or English.
+     "Receive an audio input in either Persian or English.
+       Detect the language of the input.
+        Based on the spoken content, generate a relevant app idea.
+        Output only the app name and a list of its essential features in English.
+       Do not provide any explanation or translation.
          
-         
-        just give me important decisions were made without any explanation;
-      
-         give me result in English.
+  
          """;
  mediaList.add(media);;
         var userMessage=UserMessage.builder()
