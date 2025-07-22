@@ -131,6 +131,7 @@ Format your output as a well-structured JSON or markdown document that the devel
                       - Exception handling and user feedback (notifications, loading indicators, etc.)
                       - Assets, theming, layout structure (e.g., `MainLayout`, menus, headers, etc.)
                       - Project structure (folders and file names)
+                      
                 
                       Use the following JSON array format for output:
                 
