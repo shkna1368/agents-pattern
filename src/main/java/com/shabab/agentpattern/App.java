@@ -92,8 +92,14 @@ public class App {
           //  cvAgent.start("classpath:\\cv1.pdf",jobDescription);
            // voiceToTextAgent.start("apprequirement.mp3");
           //  voiceToTextAgent.start("appfarsi.mp3");
-          String target=  voiceToTextAgent.startMeeting("meeting.mp3");
-          String project=  appGeneratorAgent.start(target);
+         // String target=  voiceToTextAgent.startMeeting("meeting.mp3");
+         // String project=  appGeneratorAgent.start(target);
+
+         var result=   voiceToTextAgent.startInterview("jobinterview.mp3");
+            System.out.println(result);
+
+           /* var result=   voiceToTextAgent.startDailyScrum("dailyscrum.mp3");
+            System.out.println(result);*/
         };
     }
 }
